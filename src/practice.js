@@ -19,12 +19,10 @@ const cars = [
   }
 ];
 
-// const {model, coloursByPopularity:[color1, color2], speedStats:{topSpeed, zeroToSixty}} = cars
 
-const {model} = cars
-const {couloursByPopularity:[color1, color2]} = cars
-const {speedStats:{topSpeed, zeroToSixty}} = cars
 
-console.log("Hello!")
+const [{model}] = cars
+
+console.log(model)
 
 export default cars;
