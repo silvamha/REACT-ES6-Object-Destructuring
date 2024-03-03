@@ -19,4 +19,6 @@ const cars = [
   }
 ];
 
-const {model:Honda, coloursByPopularity:[color1, color2], speedStats:{topSpeed, zeroToSixty}} = cars
+const {model, coloursByPopularity:[color1, color2], speedStats:{topSpeed, zeroToSixty}} = cars
+
+console.log(model)
