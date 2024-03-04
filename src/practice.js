@@ -6,23 +6,33 @@ const cars = [
     coloursByPopularity: ["black", "silver"],
     speedStats: {
       topSpeed: 140,
-      zeroToSixty: 8.5
-    }
+      zeroToSixty: 8.5,
+    },
   },
   {
     model: "Tesla Model 3",
     coloursByPopularity: ["red", "white"],
     speedStats: {
       topSpeed: 150,
-      zeroToSixty: 3.2
-    }
-  }
+      zeroToSixty: 3.2,
+    },
+  },
 ];
 
+const [honda, tesla] = cars;
 
+const {
+  model: hondaModel,
+  coloursByPopularity: [hondaTopColour],
+  speedStats: { topSpeed: hondaTopSpeed, zeroToSixty: hondaZeroToSixty },
+} = honda;
 
-const [{model}] = cars
+const {
+  model: teslaModel,
+  coloursByPopularity: [teslaTopColour],
+  speedStats: { topSpeed: teslaTopSpeed, zeroToSixty: teslaZeroToSixty },
+} = tesla;
 
-console.log(model)
+console.log(tesla.model);
 
-export default cars;
+export { hondaModel, hondaTopColour, hondaTopSpeed, hondaZeroToSixty, teslaModel, teslaTopColour, teslaTopSpeed, teslaZeroToSixty };
